@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jordan Profile</title>
+
+    <style>
+      body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b1f3a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 200vh;
+            background: linear-gradient(270deg, #ffffff, #000000, #ff0000);
+            background-size: 600% 600%;
+            animation: moverFondo 40s ease infinite;
+        }
+        @keyframes moverFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+        .card {
+            width: 320px;
+            background: #1c1c1c;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .header {
+            background: #c8102e;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        .info h2 {
+            font-size: 16px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+
+        .info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info li {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .about {
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #ccc;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            background: #000;
+            color: #888;
+        }
+               .imagenes img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .imagenes img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="header">
+            <h1>Michael Jordan</h1>
+            <p>Shooting Guard</p>
+
+        </div>
+        <div class="imagenes">
+            <img width="300" src="../resources/images/jordan.png" alt="Jordan">
+        </div>
+
+        <div class="info">
+            
+            <h2>Personal Info</h2>
+            <ul>
+                <li><strong>Full Name:</strong> Michael Jeffrey Jordan</li>
+                <li><strong>Age:</strong> 63</li>
+                <li><strong>Height:</strong> 198 cm (6'6")</li>
+                <li><strong>Wingspan:</strong> 211 cm</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h2>Player Profile</h2>
+            <ul>
+                <li><strong>Style:</strong> Scorer / Clutch</li>
+                <li><strong>Teams:</strong> Bulls, Wizards</li>
+                <li><strong>Championships:</strong> 6x NBA Champion</li>
+            </ul>
+        </div>
+
+        <div class="about">
+            Michael Jordan is widely regarded as the greatest basketball player of all time.
+            His scoring ability, competitiveness, and clutch performances defined an era
+            and made him a global icon.
+        </div>
+
+        <div class="footer">
+            © 2026 NBA Profile
+        </div>
+
+    </div>
+
+</body>
+</html>

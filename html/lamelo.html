@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 200vh;
+            background: linear-gradient(270deg, #1d1160, #00ffff, #000000);
+            background-size: 600% 600%;
+            animation: moverFondo 20s ease infinite;
+        }
+
+        @keyframes moverFondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .card {
+            width: 320px;
+            background: #111;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .header {
+            background: #1d1160;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .imagenes {
+            text-align: center;
+            background: black;
+        }
+
+        .imagenes img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .imagenes img:hover {
+            transform: scale(1.1);
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        .info h2 {
+            border-bottom: 1px solid #444;
+        }
+
+        .info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about {
+            padding: 20px;
+            color: #ccc;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #000;
+            color: #888;
+        }
+    </style>
+
+    <body>
+
+        <div class="card">
+
+            <div class="header">
+                <h1>LaMelo Ball</h1>
+                <p>Point Guard</p>
+            </div>
+
+            <div class="imagenes">
+                <img src="../resources/images/lamelo.png">
+            </div>
+
+            <div class="info">
+                <h2>Personal Info</h2>
+                <ul>
+                    <li><strong>Full Name:</strong> LaMelo LaFrance Ball</li>
+                    <li><strong>Age:</strong> 24</li>
+                    <li><strong>Height:</strong> 201 cm (6'7")</li>
+                    <li><strong>Wingspan:</strong> 206 cm</li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <h2>Player Profile</h2>
+                <ul>
+                    <li><strong>Style:</strong> Playmaker / Flashy</li>
+                    <li><strong>Team:</strong> Hornets</li>
+                </ul>
+            </div>
+
+            <div class="about">
+                LaMelo Ball is known for his creativity, passing, and flashy style of play.
+                His vision and confidence make him one of the most exciting young players.
+            </div>
+
+            <div class="footer">
+                © 2026 NBA Profile
+            </div>
+
+        </div>
+
+    </body>
+</body>
+
+</html>

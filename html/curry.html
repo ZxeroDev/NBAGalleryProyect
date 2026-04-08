@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Curry Profile</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b1f3a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 200vh;
+            background: linear-gradient(270deg, #1d428a, #ffc72c, #1d428a);
+            background-size: 600% 600%;
+            animation: moverFondo 40s ease infinite;
+        }
+        @keyframes moverFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+        .card {
+            width: 320px;
+            background: #142d52;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .header {
+            background: #1d428a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        .info h2 {
+            font-size: 16px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+
+        .info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info li {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .about {
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #ccc;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            background: #000;
+            color: #888;
+        }
+               .imagenes img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .imagenes img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="header">
+            <h1>Stephen Curry</h1>
+            <p>Point Guard</p>
+        </div>
+        <div> <img width="300" src="../resources/images/scurry.png" alt=""></div>
+        <div class="info">
+            <h2>Personal Info</h2>
+            <ul>
+                <li><strong>Full Name:</strong> Wardell Stephen Curry II</li>
+                <li><strong>Age:</strong> 38</li>
+                <li><strong>Height:</strong> 188 cm (6'2")</li>
+                <li><strong>Wingspan:</strong> 191 cm</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h2>Player Profile</h2>
+            <ul>
+                <li><strong>Style:</strong> Shooter / Playmaker</li>
+                <li><strong>Team:</strong> Golden State Warriors</li>
+                <li><strong>Championships:</strong> 4x NBA Champion</li>
+            </ul>
+        </div>
+
+        <div class="about">
+            Stephen Curry revolutionized basketball with his incredible three-point shooting.
+            His quick release, ball handling, and leadership have made him one of the most
+            influential players in NBA history.
+        </div>
+
+        <div class="footer">
+            © 2026 NBA Profile
+        </div>
+
+    </div>
+
+</body>
+
+</html>
