@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Teams & Players</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: #111;
+        }
+
+        /* Animación de degradado */
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header img {
+            width: 150px;
+            transition: transform 0.3s;
+        }
+
+        header img:hover {
+            transform: scale(1.1) rotate(-10deg);
+        }
+
+        header h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 10px #000;
+        }
+
+        /* Secciones de equipos */
+        .seccion {
+            padding: 40px 20px;
+        }
+
+        .seccion h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px #000;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Fondos degradados animados por equipo */
+        .lakers {
+            background: linear-gradient(-45deg, #552583, #FDB927);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .bulls {
+            background: linear-gradient(-45deg, #ce1141, #000000);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .warriors {
+            background: linear-gradient(-45deg, #1D428A, #FFC72C);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .celtics {
+            background: linear-gradient(-45deg, #007A33, #BA9653);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .heat {
+            background: linear-gradient(-45deg, #98002E, #F9A01B);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .raptors {
+            background: linear-gradient(-45deg, #CE1141, #000000);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .sixers {
+            background: linear-gradient(-45deg, #006BB6, #ED174C);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .nets {
+            background: linear-gradient(-45deg, #000000, #FFFFFF);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .hawks {
+            background: linear-gradient(-45deg, #E03A3E, #C1D32F);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .mavericks {
+            background: linear-gradient(-45deg, #00538C, #B8C4CA);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .nuggets {
+            background: linear-gradient(-45deg, #0E2240, #FEC524);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .pacers {
+            background: linear-gradient(-45deg, #002D62, #FDBB30);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .clippers {
+            background: linear-gradient(-45deg, #C8102E, #1D428A);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .grizzlies {
+            background: linear-gradient(-45deg, #5D76A9, #12173F);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .pelicans {
+            background: linear-gradient(-45deg, #0C2340, #C8102E, #85714D);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .kings {
+            background: linear-gradient(-45deg, #5A2D81, #63727A);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .spurs {
+            background: linear-gradient(-45deg, #C4CED4, #000000);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .magic {
+            background: linear-gradient(-45deg, #0077C0, #C4CED4);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .hornets {
+            background: linear-gradient(-45deg, #1D1160, #00788C, #A1A1A4);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .wizards {
+            background: linear-gradient(-45deg, #002B5C, #E31837);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .bucks {
+            background: linear-gradient(-45deg, #00471B, #EEE1C6);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .timberwolves {
+            background: linear-gradient(-45deg, #0C2340, #78BE20);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .pistons {
+            background: linear-gradient(-45deg, #C8102E, #006BB6);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        .rockets {
+            background: linear-gradient(-45deg, #CE1141, #000000);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        /* Cards de jugadores */
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .card {
+            width: 180px;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .card-front img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            background: #444;
+        }
+
+        .card-back {
+            background: rgba(0, 0, 0, 0.8);
+            transform: rotateY(180deg);
+        }
+
+        .card-back .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="resources/images/nba.png" alt="NBA Logo">
+        <h1>NBA Teams & Players</h1>
+    </header>
+
+    <script>
+        const nbaTeams = [
+            { name: "Los Angeles Lakers", class: "lakers", players: ["LeBron James", "Anthony Davis", "Russell Westbrook", "Austin Reaves", "Troy Brown Jr.", "Malik Beasley", "D'Angelo Russell", "Carmelo Anthony", "Kent Bazemore", "Jarred Vanderbilt"] },
+            { name: "Chicago Bulls", class: "bulls", players: ["Zach LaVine", "DeMar DeRozan", "Coby White", "Patrick Williams", "Nikola Vucevic", "Ayo Dosunmu", "Tony Bradley", "Alex Caruso", "Derrick Jones Jr.", "Javonte Green"] },
+            { name: "Golden State Warriors", class: "warriors", players: ["Stephen Curry", "Klay Thompson", "Draymond Green", "Andrew Wiggins", "Jordan Poole", "Kevon Looney", "Jonathan Kuminga", "Moses Moody", "Gary Payton II", "Damion Lee"] },
+            { name: "Boston Celtics", class: "celtics", players: ["Jayson Tatum", "Jaylen Brown", "Marcus Smart", "Robert Williams", "Al Horford", "Malcolm Brogdon", "Grant Williams", "Derrick White", "Payton Pritchard", "Sam Hauser"] },
+            { name: "Miami Heat", class: "heat", players: ["Jimmy Butler", "Bam Adebayo", "Kyle Lowry", "Tyler Herro", "Duncan Robinson", "Victor Oladipo", "Max Strus", "P.J. Tucker", "Caleb Martin", "Gabe Vincent"] },
+            { name: "Toronto Raptors", class: "raptors", players: ["Pascal Siakam", "Fred VanVleet", "OG Anunoby", "Scottie Barnes", "Chris Boucher", "Gary Trent Jr.", "Khem Birch", "Malachi Flynn", "Precious Achiuwa", "D.J. Wilson"] },
+            { name: "Philadelphia 76ers", class: "sixers", players: ["Joel Embiid", "James Harden", "Tyrese Maxey", "Tobias Harris", "P.J. Tucker", "Danny Green", "DeAndre Jordan", "Matisse Thybulle", "Georges Niang", "Shake Milton"] },
+            { name: "Brooklyn Nets", class: "nets", players: ["Kevin Durant", "Kyrie Irving", "Ben Simmons", "Joe Harris", "Nic Claxton", "Patty Mills", "Cam Thomas", "Seth Curry", "Andre Drummond", "Paul Millsap"] },
+            { name: "Atlanta Hawks", class: "hawks", players: ["Trae Young", "De’Andre Hunter", "Clint Capela", "John Collins", "Bogdan Bogdanovic", "Kevin Huerter", "Danilo Gallinari", "Jared Vanderbilt", "Delon Wright", " Onyeka Okongwu"] },
+            { name: "Dallas Mavericks", class: "mavericks", players: ["Luka Doncic", "Kristaps Porzingis", "Tim Hardaway Jr.", "Reggie Bullock", "Dorian Finney-Smith", "Jalen Brunson", "Maxi Kleber", "Josh Green", "Dwight Powell", "Sterling Brown"] },
+            { name: "Denver Nuggets", class: "nuggets", players: ["Nikola Jokic", "Jamal Murray", "Michael Porter Jr.", "Aaron Gordon", "Will Barton", "Monte Morris", "JaMychal Green", "Vlatko Cancar", "Zeke Nnaji", "Jeff Green"] },
+            { name: "Indiana Pacers", class: "pacers", players: ["Tyrese Haliburton", "Myles Turner", "Buddy Hield", "T.J. McConnell", "Aaron Nesmith", "Chris Duarte", "Jalen Smith", "Maguire", "Goga Bitadze", "T.J. Warren"] },
+            { name: "Los Angeles Clippers", class: "clippers", players: ["Kawhi Leonard", "Paul George", "Reggie Jackson", "Marcus Morris", "Ivica Zubac", "Terance Mann", "Norman Powell", "Luke Kennard", "Keon Johnson", "Jason Preston"] },
+            { name: "Memphis Grizzlies", class: "grizzlies", players: ["Ja Morant", "Jaren Jackson Jr.", "Desmond Bane", "Tyus Jones", "Dillon Brooks", "Steven Adams", "Santi Aldama", "Brandon Clarke", "De’Anthony Melton", "Ziaire Williams"] },
+            { name: "New Orleans Pelicans", class: "pelicans", players: ["Zion Williamson", "Brandon Ingram", "CJ McCollum", "Jonas Valanciunas", "Herbert Jones", "Jaxson Hayes", "Jose Alvarado", "Trey Murphy III", "Garrett Temple", "Kira Lewis Jr."] },
+            { name: "Sacramento Kings", class: "kings", players: ["De’Aaron Fox", "Domantas Sabonis", "Harrison Barnes", "Richaun Holmes", "Kevin Huerter", "Davion Mitchell", "Keegan Murray", "Terence Davis", "Chimezie Metu", "Justin James"] },
+            { name: "San Antonio Spurs", class: "spurs", players: ["Keldon Johnson", "Dejounte Murray", "Jakob Poeltl", "Jeremy Sochan", "Tre Jones", "Doug McDermott", "Malaki Branham", "Ziaire Williams", "Josh Primo", "Jock Landale"] },
+            { name: "Orlando Magic", class: "magic", players: ["Paolo Banchero", "Cole Anthony", "Franz Wagner", "Markelle Fultz", "Wendell Carter Jr.", "Gary Harris", "Jalen Suggs", "Moses Brown", "Chuma Okeke", "Jevon Carter"] },
+            { name: "Charlotte Hornets", class: "hornets", players: ["LaMelo Ball", "Terry Rozier", "Gordon Hayward", "Miles Bridges", "P.J. Washington", "Jalen McDaniels", "Kai Jones", "James Bouknight", "Nick Richards", "Ish Smith"] },
+            { name: "Washington Wizards", class: "wizards", players: ["Bradley Beal", "Kristaps Porzingis", "Kyle Kuzma", "Deni Avdija", "Rui Hachimura", "Monte Morris", "Corey Kispert", "Thomas Bryant", "Jordan Goodwin", "Aaron Holiday"] },
+            { name: "Milwaukee Bucks", class: "bucks", players: ["Giannis Antetokounmpo", "Khris Middleton", "Jrue Holiday", "Brook Lopez", "Bobby Portis", "Pat Connaughton", "Grayson Allen", "Semi Ojeleye", "Jae Crowder", "Thanasis Antetokounmpo"] },
+            { name: "Minnesota Timberwolves", class: "timberwolves", players: ["Karl-Anthony Towns", "Anthony Edwards", "D'Angelo Russell", "Rudy Gobert", "Jaden McDaniels", "Jaylen Nowell", "Naz Reid", "Jarred Vanderbilt", "Jake Layman", "Malik Beasley"] },
+            { name: "Detroit Pistons", class: "pistons", players: ["Jaden Ivey", "Bojan Bogdanovic", "Jalen Duren", "Cade Cunningham", "Killian Hayes", "Isaiah Stewart", "Saddiq Bey", "Cory Joseph", "Hamidou Diallo", "Frank Jackson"] },
+            { name: "Houston Rockets", class: "rockets", players: ["Jalen Green", "Kevin Porter Jr.", "Alperen Sengun", "Eric Gordon", "Jabari Smith Jr.", "Kenyon Martin Jr.", "Tari Eason", "Usman Garuba", "Daishen Nix", "Dylan Windler"] }
+        ];
+
+        nbaTeams.forEach(team => {
+            document.write(`<div class="seccion ${team.class}"><h2>${team.name}</h2><div class="contenedor">`);
+            team.players.forEach(player => {
+                document.write(`<div class="card"><div class="card-inner"><div class="card-front"><img src="#" alt="${player}"><p>${player}</p></div><div class="card-back"><p>${player}</p><p>Descripción del jugador...</p><a href="#" class="btn">Ver más</a></div></div></div>`);
+            });
+            document.write(`</div></div>`);
+        });
+    </script>
+
+</body>
+
+</html>
