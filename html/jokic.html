@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 200vh;
+            background: linear-gradient(270deg, #0e2240, #fec524, #1d428a);
+            background-size: 600% 600%;
+            animation: moverFondo 20s ease infinite;
+        }
+
+        @keyframes moverFondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .card {
+            width: 320px;
+            background: #111;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(254, 197, 36, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .header {
+            background: #0e2240;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .imagenes {
+            text-align: center;
+            background: black;
+        }
+
+        .imagenes img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .imagenes img:hover {
+            transform: scale(1.1);
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        .info h2 {
+            border-bottom: 1px solid #444;
+        }
+
+        .info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about {
+            padding: 20px;
+            color: #ccc;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #000;
+            color: #888;
+        }
+    </style>
+
+    <body>
+
+        <div class="card">
+
+            <div class="header">
+                <h1>Nikola Jokić</h1>
+                <p>Center</p>
+            </div>
+
+            <div class="imagenes">
+                <img src="../resources/images/jokic.png">
+            </div>
+
+            <div class="info">
+                <h2>Personal Info</h2>
+                <ul>
+                    <li><strong>Full Name:</strong> Nikola Jokić</li>
+                    <li><strong>Age:</strong> 31</li>
+                    <li><strong>Height:</strong> 211 cm (6'11")</li>
+                    <li><strong>Wingspan:</strong> 221 cm</li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <h2>Player Profile</h2>
+                <ul>
+                    <li><strong>Style:</strong> Playmaker / Center</li>
+                    <li><strong>Team:</strong> Nuggets</li>
+                    <li><strong>Championships:</strong> 1x NBA Champion</li>
+                </ul>
+            </div>
+
+            <div class="about">
+                Nikola Jokić is one of the most unique players in NBA history,
+                known for his incredible passing, basketball IQ, and efficiency.
+                A dominant center who controls the game like a point guard.
+            </div>
+
+            <div class="footer">
+                © 2026 NBA Profile
+            </div>
+
+        </div>
+
+    </body>
+</body>
+
+</html>
