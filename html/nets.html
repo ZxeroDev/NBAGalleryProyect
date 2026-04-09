@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nets</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #000, #111, #444);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px white;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Brooklyn Nets</h1>
+            <img src="../resources/images/nets.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Ben Simmons</p>
+            <p>Escolta: Cam Thomas</p>
+            <p>Alero: Mikal Bridges</p>
+            <p>Ala-Pívot: Dorian Finney-Smith</p>
+            <p>Pívot: Nic Claxton</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Nets son un equipo moderno que apuesta por la versatilidad y el juego
+                perimetral, con jugadores capaces de adaptarse a diferentes roles dentro
+                del sistema.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                La franquicia ha pasado por varias reconstrucciones a lo largo de su historia,
+                buscando consolidarse como contendiente en la NBA.
+            </p>
+            <p>
+                En los últimos años han contado con grandes estrellas, lo que elevó su nivel competitivo.
+            </p>
+            <p>
+                Actualmente apuestan por un proyecto equilibrado con talento joven y experiencia.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

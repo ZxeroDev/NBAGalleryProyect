@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spurs</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #c4ced4, #000, #000);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px white;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #c4ced4;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>San Antonio Spurs</h1>
+            <img src="../resources/images/spurs.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Tre Jones</p>
+            <p>Escolta: Devin Vassell</p>
+            <p>Alero: Keldon Johnson</p>
+            <p>Ala-Pívot: Victor Wembanyama</p>
+            <p>Pívot: Zach Collins</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Spurs son conocidos por su disciplina táctica y desarrollo de jugadores,
+                siendo una de las franquicias más respetadas de la NBA.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                San Antonio fue una dinastía en la NBA con múltiples campeonatos.
+            </p>
+            <p>
+                Su estilo de juego basado en el equipo marcó una era.
+            </p>
+            <p>
+                Actualmente están en reconstrucción con una joven superestrella.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

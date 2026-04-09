@@ -1,85 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA</title>
     <style>
-        body { background: #0f0f0f; color: white; font-family: Arial; }
-        .contenedor { display: flex; justify-content: center; gap: 30px; margin-top: 50px; flex-wrap: wrap; }
-        .equipo { width: 200px; height: 180px; background: #1a1a1a; border-radius: 15px; display: flex; align-items: center; justify-content: center; transition: 0.3s; cursor: pointer; overflow: hidden; position: relative; }
-        .equipo img { transition: transform 0.3s; }
-        .equipo:hover img { transform: scale(1.15); }
-        .equipo::after { content: attr(data-nombre); position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: rgb(0,0,0); padding: 5px 10px; border-radius: 15px; font-size: 12px; opacity: 0; transition: 0.3s; white-space: nowrap; }
-        .equipo:hover::after { opacity: 1; bottom: 10px; }
-        .titulo-bloque { display: flex; align-items: center; justify-content: center; gap: 4px; margin-top: 50px; margin-bottom: 1px; }
-        .titulo-bloque h2 { font-size: 36px; color: #ffffff; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; text-shadow: 2px 2px 8px #000; }
-        .logo-nba { width: 80px; height: auto; transition: transform 0.3s; }
-        .titulo-bloque:hover .logo-nba { transform: scale(2) rotate(-20deg); }
+        body {
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .equipo {
+            width: 200px;
+            height: 180px;
+            background: #1a1a1a;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .equipo img {
+            transition: transform 0.3s;
+        }
+
+        .equipo:hover img {
+            transform: scale(1.15);
+        }
+
+        .equipo::after {
+            content: attr(data-nombre);
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgb(0, 0, 0);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            opacity: 0;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        .equipo:hover::after {
+            opacity: 1;
+            bottom: 10px;
+        }
+
+        .titulo-bloque {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            margin-top: 50px;
+            margin-bottom: 1px;
+        }
+
+        .titulo-bloque h2 {
+            font-size: 36px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        .logo-nba {
+            width: 80px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .titulo-bloque:hover .logo-nba {
+            transform: scale(2) rotate(-20deg);
+        }
     </style>
 </head>
+
 <body>
 
-<div class="titulo-bloque">
-    <img class="logo-nba" src="resources/images/nba.png" alt="NBA Logo">
-    <h2>NBA</h2>
-</div>
+    <div class="titulo-bloque">
+        <img class="logo-nba" src="resources/images/nba.png" alt="NBA Logo">
+        <h2>NBA</h2>
+    </div>
 
-<div class="contenedor">
-    <a href="lakers.html" class="equipo lakers" data-nombre="Lakers"><img width="170" src="resources/images/lakers.png"></a>
-    <a href="bulls.html" class="equipo bulls" data-nombre="Bulls"><img width="160" src="resources/images/bulls.jpg"></a>
-    <a href="warriors.html" class="equipo warriors" data-nombre="Warriors"><img width="270" src="resources/images/warriors.png"></a>
-    <a href="celtics.html" class="equipo celtics" data-nombre="Celtics"><img width="150" src="resources/images/Boston_Celtics.svg"></a>
-    <a href="rockets.html" class="equipo rockets" data-nombre="Rockets"><img width="200" src="resources/images/rockets.png"></a>
-    <a href="grizzlies.html" class="equipo grizz" data-nombre="Grizzlies"><img width="140" src="resources/images/grizzlies.png"></a>
-    <a href="heat.html" class="equipo heat" data-nombre="Heat"><img width="130" src="resources/images/miami.png"></a>
-    <a href="hornets.html" class="equipo hornets" data-nombre="Hornets"><img width="170" src="resources/images/hornets.png"></a>
-    <a href="raptors.html" class="equipo raptors" data-nombre="Raptors"><img width="150" src="resources/images/raptors.png"></a>
-    <a href="sixers.html" class="equipo sevensix" data-nombre="76ers"><img width="140" src="resources/images/sevensixers.png"></a>
-    <a href="knicks.html" class="equipo knicks" data-nombre="Knicks"><img width="150" src="resources/images/knicks.png"></a>
-    <a href="nets.html" class="equipo nets" data-nombre="Nets"><img width="150" src="resources/images/nets.png"></a>
-    <a href="bucks.html" class="equipo bucks" data-nombre="Bucks"><img width="130" src="resources/images/bucks.png"></a>
-    <a href="pacers.html" class="equipo pacers" data-nombre="Pacers"><img width="150" src="resources/images/pacers.png"></a>
-    <a href="cavs.html" class="equipo cavs" data-nombre="Cavaliers"><img width="150" src="resources/images/cavs.png"></a>
-    <a href="magic.html" class="equipo magic" data-nombre="Magic"><img width="190" src="resources/images/magic.png"></a>
-    <a href="wizards.html" class="equipo wizards" data-nombre="Wizards"><img width="150" src="resources/images/wizards.png"></a>
-    <a href="hawks.html" class="equipo hawks" data-nombre="Hawks"><img width="255" src="resources/images/hawks.png"></a>
-    <a href="pistons.html" class="equipo pistons" data-nombre="Pistons"><img width="160" src="resources/images/pistons.png"></a>
-    <a href="nuggets.html" class="equipo nuggets" data-nombre="Nuggets"><img width="160" src="resources/images/nuggets.png"></a>
-    <a href="timberwolves.html" class="equipo timberwolves" data-nombre="Timberwolves"><img width="160" src="resources/images/timberwolves.png"></a>
-    <a href="thunder.html" class="equipo thunder" data-nombre="Thunder"><img width="160" src="resources/images/thunder.png"></a>
-    <a href="blazers.html" class="equipo blazers" data-nombre="Blazers"><img width="170" src="resources/images/blazers.png"></a>
-    <a href="jazz.html" class="equipo jazz" data-nombre="Jazz"><img width="170" src="resources/images/jazz.png"></a>
-    <a href="suns.html" class="equipo suns" data-nombre="Suns"><img width="150" src="resources/images/suns.svg"></a>
-    <a href="clippers.html" class="equipo clippers" data-nombre="Clippers"><img width="160" src="resources/images/clippers.png"></a>
-    <a href="kings.html" class="equipo kings" data-nombre="Kings"><img width="140" src="resources/images/kings.png"></a>
-    <a href="mavericks.html" class="equipo mavericks" data-nombre="Mavericks"><img width="150" src="resources/images/mavericks.png"></a>
-    <a href="spurs.html" class="equipo spurs" data-nombre="Spurs"><img width="160" src="resources/images/spurs.png"></a>
-    <a href="pelicans.html" class="equipo pelicans" data-nombre="Pelicans"><img width="160" src="resources/images/pelicans.png"></a>
-</div>
+    <div class="contenedor">
+        <a href="html/lakers.html" class="equipo lakers" data-nombre="Lakers"><img width="170"
+                src="resources/images/lakers.png"></a>
+        <a href="html/bulls.html" class="equipo bulls" data-nombre="Bulls"><img width="160"
+                src="resources/images/bulls.jpg"></a>
+        <a href="html/warriors.html" class="equipo warriors" data-nombre="Warriors"><img width="270"
+                src="resources/images/warriors.png"></a>
+        <a href="html/celtics.html" class="equipo celtics" data-nombre="Celtics"><img width="150"
+                src="resources/images/Boston_Celtics.svg"></a>
+        <a href="html/rockets.html" class="equipo rockets" data-nombre="Rockets"><img width="200"
+                src="resources/images/rockets.png"></a>
+        <a href="html/grizzlies.html" class="equipo grizz" data-nombre="Grizzlies"><img width="140"
+                src="resources/images/grizzlies.png"></a>
+        <a href="html/heat.html" class="equipo heat" data-nombre="Heat"><img width="130"
+                src="resources/images/miami.png"></a>
+        <a href="html/hornets.html" class="equipo hornets" data-nombre="Hornets"><img width="170"
+                src="resources/images/hornets.png"></a>
+        <a href="html/raptors.html" class="equipo raptors" data-nombre="Raptors"><img width="150"
+                src="resources/images/raptors.png"></a>
+        <a href="html/sixers.html" class="equipo sevensix" data-nombre="76ers"><img width="140"
+                src="resources/images/sevensixers.png"></a>
+        <a href="html/knicks.html" class="equipo knicks" data-nombre="Knicks"><img width="150"
+                src="resources/images/knicks.png"></a>
+        <a href="html/nets.html" class="equipo nets" data-nombre="Nets"><img width="150" src="resources/images/nets.png"></a>
+        <a href="html/bucks.html" class="equipo bucks" data-nombre="Bucks"><img width="130"
+                src="resources/images/bucks.png"></a>
+        <a href="html/pacers.html" class="equipo pacers" data-nombre="Pacers"><img width="150"
+                src="resources/images/pacers.png"></a>
+        <a href="html/cavs.html" class="equipo cavs" data-nombre="Cavaliers"><img width="150"
+                src="resources/images/cavs.png"></a>
+        <a href="html/magic.html" class="equipo magic" data-nombre="Magic"><img width="190"
+                src="resources/images/magic.png"></a>
+        <a href="html/wizards.html" class="equipo wizards" data-nombre="Wizards"><img width="150"
+                src="resources/images/wizards.png"></a>
+        <a href="html/hawks.html" class="equipo hawks" data-nombre="Hawks"><img width="255"
+                src="resources/images/hawks.png"></a>
+        <a href="html/pistons.html" class="equipo pistons" data-nombre="Pistons"><img width="160"
+                src="resources/images/pistons.png"></a>
+        <a href="html/nuggets.html" class="equipo nuggets" data-nombre="Nuggets"><img width="160"
+                src="resources/images/nuggets.png"></a>
+        <a href="html/timberwolves.html" class="equipo timberwolves" data-nombre="Timberwolves"><img width="160"
+                src="resources/images/timberwolves.png"></a>
+        <a href="html/thunder.html" class="equipo thunder" data-nombre="Thunder"><img width="160"
+                src="resources/images/thunder.png"></a>
+        <a href="html/blazers.html" class="equipo blazers" data-nombre="Blazers"><img width="170"
+                src="resources/images/blazers.png"></a>
+        <a href="html/jazz.html" class="equipo jazz" data-nombre="Jazz"><img width="170" src="resources/images/jazz.png"></a>
+        <a href="html/suns.html" class="equipo suns" data-nombre="Suns"><img width="150" src="resources/images/suns.svg"></a>
+        <a href="html/clippers.html" class="equipo clippers" data-nombre="Clippers"><img width="160"
+                src="resources/images/clippers.png"></a>
+        <a href="html/kings.html" class="equipo kings" data-nombre="Kings"><img width="140"
+                src="resources/images/kings.png"></a>
+        <a href="html/mavericks.html" class="equipo mavericks" data-nombre="Mavericks"><img width="150"
+                src="resources/images/mavericks.png"></a>
+        <a href="html/spurs.html" class="equipo spurs" data-nombre="Spurs"><img width="160"
+                src="resources/images/spurs.png"></a>
+        <a href="html/pelicans.html" class="equipo pelicans" data-nombre="Pelicans"><img width="160"
+                src="resources/images/pelicans.png"></a>
+    </div>
 
-<div class="titulo-bloque">
-    <img class="logo-nba" src="resources/images/nba.png" alt="NBA Logo">
-    <h2>SHOW</h2>
-</div>
+    <div class="titulo-bloque">
+        <img class="logo-nba" src="resources/images/nba.png" alt="NBA Logo">
+        <h2>SHOW</h2>
+    </div>
 
-<div class="contenedor">
-    <a href="globetrotters.html" class="equipo globetrotters" data-nombre="Harlem Globetrotters"><img width="160" src="resources/images/globetrotters.png"></a>
-    <a href="generals.html" class="equipo generals" data-nombre="Washington Generals"><img width="170" src="resources/images/generals.png"></a>
-</div>
+    <div class="contenedor">
+        <a href="globetrotters.html" class="equipo globetrotters" data-nombre="Harlem Globetrotters"><img width="160"
+                src="resources/images/globetrotters.png"></a>
+        <a href="generals.html" class="equipo generals" data-nombre="Washington Generals"><img width="170"
+                src="resources/images/generals.png"></a>
+    </div>
 
-<div class="titulo-bloque">
-    <img class="logo-nba" src="resources/images/nba.png" alt="NBA Logo">
-    <h2>HISTÓRICOS</h2>
-</div>
+    <div class="titulo-bloque">
+        <img class="logo-nba" src="resources/images/nba.png" alt="NBA Logo">
+        <h2>HISTÓRICOS</h2>
+    </div>
 
-<div class="contenedor">
-    <a href="supersonics.html" class="equipo supersonics" data-nombre="Seattle SuperSonics"><img width="150" src="resources/images/supersonics.png"></a>
-    <a href="bullets.html" class="equipo bullets" data-nombre="Washington Bullets"><img width="170" src="resources/images/bullets.png"></a>
-    <a href="nets-old.html" class="equipo nets-old" data-nombre="New Jersey Nets"><img width="140" src="resources/images/nets-old.webp"></a>
-    <a href="bobcats.html" class="equipo hornets-old" data-nombre="Charlotte Bobcats"><img width="170" src="resources/images/bobcats.png"></a>
-    <a href="lakers-old.html" class="equipo lakers-old" data-nombre="Minneapolis Lakers"><img width="150" src="resources/images/lakers-old.png"></a>
-</div>
-
+    <div class="contenedor">
+        <a href="supersonics.html" class="equipo supersonics" data-nombre="Seattle SuperSonics"><img width="150"
+                src="resources/images/supersonics.png"></a>
+        <a href="bullets.html" class="equipo bullets" data-nombre="Washington Bullets"><img width="170"
+                src="resources/images/bullets.png"></a>
+        <a href="nets-old.html" class="equipo nets-old" data-nombre="New Jersey Nets"><img width="140"
+                src="resources/images/nets-old.webp"></a>
+        <a href="bobcats.html" class="equipo hornets-old" data-nombre="Charlotte Bobcats"><img width="170"
+                src="resources/images/bobcats.png"></a>
+        <a href="lakers-old.html" class="equipo lakers-old" data-nombre="Minneapolis Lakers"><img width="150"
+                src="resources/images/lakers-old.png"></a>
+    </div>
+  <div class="contenedor">
+     <a href="html/nbateams.html" class="equipo
+     " data-nombre="See All teams draft 2026"><img width="200"  src="resources/images/allteam.webp"></a>
+  </div>
 </body>
+
 </html>

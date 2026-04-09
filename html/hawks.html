@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hawks</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #e03a3e, #000, #c1d32f);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #e03a3e;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #e03a3e;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Atlanta Hawks</h1>
+            <img src="../resources/images/hawks.png">
+            <p>Base: Trae Young</p>
+            <p>Escolta: Dejounte Murray</p>
+            <p>Alero: De'Andre Hunter</p>
+            <p>Ala-Pívot: Jalen Johnson</p>
+            <p>Pívot: Clint Capela</p>
+            <h3>Descripción</h3>
+            <p>Equipo ofensivo con gran capacidad anotadora y ritmo alto de juego.</p>
+        </div>
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>Han tenido etapas competitivas importantes en la NBA.</p>
+            <p>Se caracterizan por su estilo ofensivo.</p>
+            <p>Buscan consolidarse como contendientes.</p>
+        </div>
+    </div>
+</body>
+
+</html>

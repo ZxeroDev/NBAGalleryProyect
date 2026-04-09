@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>76ers</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #006bb6, #000, #ed174c);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px blue;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1,
+        h2 {
+            color: #006bb6;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Philadelphia 76ers</h1>
+            <img src="../resources/images/sevensixers.png">
+
+            <p>Base: Tyrese Maxey</p>
+            <p>Escolta: Kelly Oubre Jr.</p>
+            <p>Alero: Tobias Harris</p>
+            <p>Ala-Pívot: Nicolas Batum</p>
+            <p>Pívot: Joel Embiid</p>
+
+            <h3>Descripción</h3>
+            <p>Equipo dominante en la pintura, con gran capacidad ofensiva liderada por una superestrella.</p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>Una de las franquicias más históricas de la NBA con múltiples campeonatos.</p>
+            <p>Han tenido leyendas que marcaron época en la liga.</p>
+            <p>Hoy buscan consolidarse como contendientes al título.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clippers</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #c8102e, #000, #1d428a);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #c8102e;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #c8102e;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>LA Clippers</h1>
+            <img src="../resources/images/clippers.png">
+
+            <h3>Alineación</h3>
+            <p>Base: James Harden</p>
+            <p>Escolta: Paul George</p>
+            <p>Alero: Kawhi Leonard</p>
+            <p>Ala-Pívot: PJ Tucker</p>
+            <p>Pívot: Ivica Zubac</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Clippers son un equipo con gran talento individual y experiencia, destacando
+                por su capacidad ofensiva y defensa sólida. Su estilo se basa en el equilibrio
+                entre estrellas y profundidad de plantilla.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                Durante muchos años, los Clippers fueron considerados un equipo en crecimiento,
+                pero en la última década han logrado consolidarse como contendientes.
+            </p>
+            <p>
+                La llegada de grandes estrellas transformó la franquicia, elevando su nivel
+                competitivo dentro de la conferencia oeste.
+            </p>
+            <p>
+                Actualmente buscan alcanzar su primer campeonato con una plantilla llena de talento.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

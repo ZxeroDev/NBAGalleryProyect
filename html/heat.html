@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Miami Heat</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #98002e, #000, #f9a01b);
+            background-size: 600% 600%;
+            animation: fondo 15s ease infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+          .card {
+            width: 350px;
+            text-align: center;
+        }
+
+        .card,
+        .historia {
+            width: 350px;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            transition: .3s;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #ff4500;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 15px;
+       
+        }
+
+        h1,
+        h2 {
+            color: #ff4500;
+        }
+
+        h3 {
+            color: #ccc;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <h1>Miami Heat</h1>
+            <img src="../resources/images/miami.png">
+
+            <h3>Alineación</h3>
+            <p><b>Base:</b> Terry Rozier</p>
+            <p><b>Escolta:</b> Tyler Herro</p>
+            <p><b>Alero:</b> Jimmy Butler</p>
+            <p><b>Ala-Pívot:</b> Kevin Love</p>
+            <p><b>Pívot:</b> Bam Adebayo</p>
+
+            <h3>Descripción</h3>
+            <p>
+                El Miami Heat es una franquicia reconocida por su cultura de trabajo,
+                disciplina y mentalidad competitiva. Su estilo de juego combina defensa
+                intensa, ejecución táctica y jugadores capaces de rendir en momentos
+                clave.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+
+            <p>
+                El Heat alcanzó la élite de la NBA en la década de 2000 y consolidó su
+                legado en los años 2010 con múltiples apariciones en finales y varios
+                campeonatos. Su identidad siempre ha estado ligada a la exigencia y al
+                compromiso colectivo.
+            </p>
+
+            <p>
+                Durante la era moderna, el equipo se destacó por formar grandes
+                plantillas con estrellas que marcaron época, jugando un baloncesto
+                eficiente y dominante en ambos lados de la cancha.
+            </p>
+
+            <p>
+                En la actualidad, el Heat sigue siendo un equipo competitivo gracias a
+                su estructura sólida, su entrenador y su capacidad de maximizar el
+                rendimiento de sus jugadores, manteniéndose siempre como un rival
+                peligroso en la liga.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

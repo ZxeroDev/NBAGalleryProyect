@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pelicans</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #0c2340, #000, #c8102e);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #c8102e;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #c8102e;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>New Orleans Pelicans</h1>
+            <img src="../resources/images/pelicans.png">
+
+            <h3>Alineación</h3>
+            <p>Base: CJ McCollum</p>
+            <p>Escolta: Brandon Ingram</p>
+            <p>Alero: Herbert Jones</p>
+            <p>Ala-Pívot: Zion Williamson</p>
+            <p>Pívot: Jonas Valančiūnas</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Pelicans combinan juventud y talento ofensivo, destacando por su
+                capacidad física y dinamismo en la cancha.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                La franquicia ha pasado por diferentes etapas de reconstrucción.
+            </p>
+            <p>
+                Han desarrollado jóvenes talentos importantes.
+            </p>
+            <p>
+                Buscan consolidarse como un equipo competitivo en el oeste.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

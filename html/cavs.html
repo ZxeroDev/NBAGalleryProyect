@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cavaliers</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #6f263d, #000, #ffb81c);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px orange;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #ffb81c;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Cleveland Cavaliers</h1>
+            <img src="../resources/images/cavs.png">
+
+            <p>Base: Darius Garland</p>
+            <p>Escolta: Donovan Mitchell</p>
+            <p>Alero: Max Strus</p>
+            <p>Ala-Pívot: Evan Mobley</p>
+            <p>Pívot: Jarrett Allen</p>
+
+            <h3>Descripción</h3>
+            <p>Equipo joven con gran talento ofensivo y una sólida defensa interior.</p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>Los Cavaliers alcanzaron la gloria con un campeonato histórico.</p>
+            <p>Han tenido etapas de reconstrucción y crecimiento.</p>
+            <p>Hoy son un equipo competitivo en la conferencia este.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

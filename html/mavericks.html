@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mavericks</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #00538c, #000, #b8c4ca);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #00538c;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #00538c;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Dallas Mavericks</h1>
+            <img src="../resources/images/mavericks.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Luka Dončić</p>
+            <p>Escolta: Kyrie Irving</p>
+            <p>Alero: Tim Hardaway Jr.</p>
+            <p>Ala-Pívot: Grant Williams</p>
+            <p>Pívot: Dereck Lively II</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Mavericks son un equipo ofensivo liderado por una superestrella,
+                destacando por su creatividad y capacidad de generar puntos.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                Dallas alcanzó la gloria con un campeonato histórico que marcó su legado.
+            </p>
+            <p>
+                Han sido un equipo competitivo en diferentes etapas.
+            </p>
+            <p>
+                Hoy buscan volver a la élite con una plantilla talentosa.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

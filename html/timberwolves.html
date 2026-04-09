@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timberwolves</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #0c2340, #000, #236192);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #236192;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #236192;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Minnesota Timberwolves</h1>
+            <img src="../resources/images/timberwolves.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Mike Conley</p>
+            <p>Escolta: Anthony Edwards</p>
+            <p>Alero: Jaden McDaniels</p>
+            <p>Ala-Pívot: Karl-Anthony Towns</p>
+            <p>Pívot: Rudy Gobert</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Timberwolves combinan talento ofensivo con una fuerte presencia defensiva
+                en la pintura, destacando por su juventud y potencial de crecimiento.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                Minnesota ha tenido etapas de reconstrucción, buscando consolidarse como un
+                equipo competitivo en la liga.
+            </p>
+            <p>
+                En los últimos años han mejorado significativamente gracias a su núcleo joven.
+            </p>
+            <p>
+                Su objetivo es mantenerse como contendientes en la conferencia oeste.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

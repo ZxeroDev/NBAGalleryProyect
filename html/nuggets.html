@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nuggets</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #0e2240, #000, #fec524);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px gold;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #fec524;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Denver Nuggets</h1>
+            <img src="../resources/images/nuggets.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Jamal Murray</p>
+            <p>Escolta: Kentavious Caldwell-Pope</p>
+            <p>Alero: Michael Porter Jr.</p>
+            <p>Ala-Pívot: Aaron Gordon</p>
+            <p>Pívot: Nikola Jokić</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Nuggets son un equipo altamente eficiente ofensivamente, liderado por
+                uno de los jugadores más completos de la NBA. Su juego destaca por la
+                inteligencia, el pase y la ejecución táctica.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                Denver alcanzó la cima recientemente con un campeonato que consolidó su
+                proyecto como uno de los más sólidos de la liga.
+            </p>
+            <p>
+                El equipo ha desarrollado una identidad basada en el juego colectivo y la
+                toma de decisiones inteligentes.
+            </p>
+            <p>
+                Hoy se mantienen como contendientes gracias a su núcleo estable y su estilo
+                eficiente.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

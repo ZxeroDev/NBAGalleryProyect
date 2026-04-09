@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bulls</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(270deg, #ce1141, #000, #8b0000);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card,
+        .historia {
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            transition: .3s;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px red;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+        }
+
+        .historia {
+            width: 500px;
+            max-height: 600px;
+            overflow: auto;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: red;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Chicago Bulls</h1>
+            <img src="../resources/images/bulls.jpg">
+
+            <h3>Alineación</h3>
+            <p>Base: Lonzo Ball</p>
+            <p>Escolta: Zach LaVine</p>
+            <p>Alero: DeMar DeRozan</p>
+            <p>Ala-Pívot: Patrick Williams</p>
+            <p>Pívot: Nikola Vučević</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Chicago Bulls son una de las franquicias más icónicas del deporte mundial.
+                Su estilo combina talento individual, anotación eficiente y momentos de alto
+                nivel ofensivo. Son reconocidos por su identidad competitiva y su impacto cultural.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+
+            <p>
+                Los Bulls alcanzaron la gloria en los años 90 con una de las dinastías más
+                dominantes en la historia de la NBA, ganando seis campeonatos en ocho años.
+                Este periodo marcó una era inolvidable para el baloncesto.
+            </p>
+
+            <p>
+                Su legado trascendió el deporte, convirtiéndose en un símbolo global gracias a
+                su estilo de juego, mentalidad ganadora y jugadores legendarios.
+            </p>
+
+            <p>
+                En la actualidad, el equipo busca reconstruirse y volver a competir al más alto
+                nivel, combinando experiencia y talento joven en su plantilla.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

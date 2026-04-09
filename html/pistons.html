@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pistons</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #1d42ba, #000, #c8102e);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #1d42ba;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #1d42ba;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Detroit Pistons</h1>
+            <img src="../resources/images/pistons.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Cade Cunningham</p>
+            <p>Escolta: Jaden Ivey</p>
+            <p>Alero: Ausar Thompson</p>
+            <p>Ala-Pívot: Isaiah Stewart</p>
+            <p>Pívot: Jalen Duren</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Pistons son un equipo joven en reconstrucción que apuesta por el desarrollo
+                de talento emergente. Se caracterizan por su intensidad, físico y crecimiento
+                progresivo dentro de la liga.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                Detroit ha sido una franquicia histórica con épocas dominantes, destacando por
+                su estilo físico y defensa agresiva.
+            </p>
+            <p>
+                En diferentes décadas lograron campeonatos con una identidad basada en la dureza
+                y el trabajo en equipo.
+            </p>
+            <p>
+                Actualmente están construyendo una nueva generación con jóvenes promesas que
+                buscan devolver al equipo a la élite.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

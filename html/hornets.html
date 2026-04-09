@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hornets</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200vh;
+            background: linear-gradient(270deg, #1d1160, #000, #00788c);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card,
+        .historia {
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            transition: .3s;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #00ffff;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+        }
+
+        .historia {
+            width: 500px;
+            max-height: 600px;
+            overflow: auto;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #00ffff;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Charlotte Hornets</h1>
+            <img src="../resources/images/hornets.png">
+
+            <h3>Alineación</h3>
+            <p>Base: LaMelo Ball</p>
+            <p>Escolta: Terry Rozier</p>
+            <p>Alero: Gordon Hayward</p>
+            <p>Ala-Pívot: Miles Bridges</p>
+            <p>Pívot: Mark Williams</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Hornets son un equipo dinámico y creativo, caracterizado por su estilo
+                ofensivo rápido y espectacular. Su juego destaca por la improvisación y
+                el talento individual de sus jóvenes estrellas.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+
+            <p>
+                A lo largo de su historia, los Hornets han pasado por diferentes etapas,
+                incluyendo reconstrucciones y cambios en su plantilla.
+            </p>
+
+            <p>
+                En la actualidad, el equipo apuesta por el desarrollo de jóvenes talentos,
+                con LaMelo Ball como figura principal.
+            </p>
+
+            <p>
+                Su objetivo es consolidarse como un equipo competitivo en la conferencia
+                este y construir un proyecto sólido a futuro.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

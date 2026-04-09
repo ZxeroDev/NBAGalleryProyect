@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Houston Rockets</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(270deg, #ce1141, #000000, #6b0d1c);
+            background-size: 600% 600%;
+            animation: fondo 15s ease infinite;
+        }
+
+        /* Fondo animado */
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Contenedor */
+        .container {
+            display: flex;
+            gap: 40px;
+            padding: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Tarjetas */
+        .card,
+        .historia {
+            background: rgba(20, 20, 20, 0.95);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Hover bonito */
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 0 35px rgba(255, 0, 0, 0.6);
+        }
+
+        /* Card principal */
+        .card {
+            width: 350px;
+            text-align: center;
+        }
+
+        /* Historia */
+        .historia {
+            width: 500px;
+            max-height: 600px;
+            overflow: auto;
+        }
+
+        /* Imagen */
+        img {
+            width: 100px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Títulos */
+        h1 {
+            margin-bottom: 10px;
+            color: #ff3c3c;
+        }
+
+        h2 {
+            color: #ff3c3c;
+        }
+
+        h3 {
+            margin-top: 15px;
+            color: #ddd;
+        }
+
+        /* Texto */
+        p {
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        /* Scroll bonito */
+        .historia::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .historia::-webkit-scrollbar-thumb {
+            background: #ce1141;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <h1>Houston Rockets</h1>
+            <img src="../resources/images/rockets.png">
+
+            <h3>Alineación</h3>
+            <p><b>Base:</b> Fred VanVleet</p>
+            <p><b>Escolta:</b> Jalen Green</p>
+            <p><b>Alero:</b> Dillon Brooks</p>
+            <p><b>Ala-Pívot:</b> Jabari Smith Jr.</p>
+            <p><b>Pívot:</b> Alperen Şengün</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Houston Rockets destacan por su estilo ofensivo moderno, con ritmo alto,
+                uso intensivo del triple y jugadores dinámicos que crean su propio tiro.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+
+            <p>
+                Los Houston Rockets alcanzaron su máximo nivel en los años 90 con Hakeem Olajuwon,
+                ganando campeonatos consecutivos en 1994 y 1995 gracias a su dominio en la pintura
+                y liderazgo excepcional.
+            </p>
+
+            <p>
+                En la era moderna, revolucionaron el juego con el uso de estadísticas avanzadas
+                y el triple, destacando figuras como James Harden que llevaron al equipo a una
+                de las ofensivas más eficientes de la historia.
+            </p>
+
+            <p>
+                Actualmente, el equipo está en reconstrucción con jóvenes talentos y un futuro
+                prometedor, buscando regresar a la élite de la NBA.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

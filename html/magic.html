@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magic</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #0077c0, #000, #c4ced4);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #0077c0;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #0077c0;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Orlando Magic</h1>
+            <img src="../resources/images/magic.png">
+            <p>Base: Markelle Fultz</p>
+            <p>Escolta: Jalen Suggs</p>
+            <p>Alero: Franz Wagner</p>
+            <p>Ala-Pívot: Paolo Banchero</p>
+            <p>Pívot: Wendell Carter Jr.</p>
+            <h3>Descripción</h3>
+            <p>Equipo joven con gran proyección, destacando por su talento emergente y juego versátil.</p>
+        </div>
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>El Magic ha tenido etapas competitivas con grandes jugadores en su historia.</p>
+            <p>Han sido conocidos por desarrollar talento joven.</p>
+            <p>Actualmente construyen un futuro prometedor.</p>
+        </div>
+    </div>
+</body>
+
+</html>

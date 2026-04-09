@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Celtics</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200vh;
+            background: linear-gradient(270deg, #007a33, #000, #00471b);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card,
+        .historia {
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            transition: .3s;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #00ff88;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+        }
+
+        .historia {
+            width: 500px;
+            max-height: 600px;
+            overflow: auto;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #00ff88;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Boston Celtics</h1>
+            <img src="../resources/images/Boston_Celtics.svg">
+
+            <h3>Alineación</h3>
+            <p>Base: Jrue Holiday</p>
+            <p>Escolta: Derrick White</p>
+            <p>Alero: Jayson Tatum</p>
+            <p>Ala-Pívot: Jaylen Brown</p>
+            <p>Pívot: Kristaps Porziņģis</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Boston Celtics son una de las franquicias más prestigiosas de la NBA,
+                reconocidos por su disciplina, defensa sólida y juego colectivo. Su estilo
+                se basa en el movimiento de balón, la inteligencia táctica y el talento
+                equilibrado entre sus estrellas.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+
+            <p>
+                Los Celtics dominaron la NBA en la década de los 60, convirtiéndose en una
+                dinastía histórica con múltiples campeonatos consecutivos. Su legado los
+                posiciona como uno de los equipos más exitosos de todos los tiempos.
+            </p>
+
+            <p>
+                A lo largo de las décadas, han mantenido una identidad competitiva basada en
+                el trabajo en equipo y la defensa. Grandes jugadores han pasado por la
+                franquicia, consolidando su cultura ganadora.
+            </p>
+
+            <p>
+                En la actualidad, el equipo vive una nueva etapa dorada con jóvenes estrellas
+                como Jayson Tatum y Jaylen Brown, quienes lideran un proyecto ambicioso
+                enfocado en volver a conquistar la NBA.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

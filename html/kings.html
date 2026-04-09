@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kings</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #5a2d81, #000, #63727a);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #5a2d81;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #5a2d81;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Sacramento Kings</h1>
+            <img src="../resources/images/kings.png">
+
+            <h3>Alineación</h3>
+            <p>Base: De'Aaron Fox</p>
+            <p>Escolta: Kevin Huerter</p>
+            <p>Alero: Harrison Barnes</p>
+            <p>Ala-Pívot: Keegan Murray</p>
+            <p>Pívot: Domantas Sabonis</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Kings destacan por su estilo ofensivo rápido y eficiente, con gran movimiento
+                de balón y capacidad anotadora desde el perímetro.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                Sacramento ha tenido etapas de reconstrucción, pero recientemente ha vuelto a
+                la competitividad con un juego dinámico.
+            </p>
+            <p>
+                El equipo ha desarrollado una identidad basada en la velocidad y el ataque.
+            </p>
+            <p>
+                Actualmente buscan consolidarse como un equipo fuerte en el oeste.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Warriors</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(270deg, #1d428a, #000, #ffc72c);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card,
+        .historia {
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            transition: .3s;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px gold;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+        }
+
+        .historia {
+            width: 500px;
+            max-height: 600px;
+            overflow: auto;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: gold;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Golden State Warriors</h1>
+            <img src="../resources/images/warriors.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Stephen Curry</p>
+            <p>Escolta: Klay Thompson</p>
+            <p>Alero: Andrew Wiggins</p>
+            <p>Ala-Pívot: Draymond Green</p>
+            <p>Pívot: Kevon Looney</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Warriors revolucionaron el baloncesto moderno con su estilo basado en
+                el tiro de tres puntos, el ritmo rápido y el movimiento constante del balón.
+                Su ofensiva dinámica ha cambiado la forma en que se juega la NBA.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+
+            <p>
+                Durante la última década, los Warriors se convirtieron en una dinastía,
+                ganando múltiples campeonatos y estableciendo récords históricos.
+            </p>
+
+            <p>
+                Liderados por Stephen Curry, considerado el mejor tirador de todos los tiempos,
+                el equipo desarrolló un estilo único basado en la eficiencia ofensiva.
+            </p>
+
+            <p>
+                Su impacto en el baloncesto ha sido tan grande que muchas franquicias han
+                intentado replicar su modelo de juego basado en el triple y la velocidad.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

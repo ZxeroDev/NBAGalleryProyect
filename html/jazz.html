@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jazz</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #002b5c, #000, #f9a01b);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #f9a01b;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #f9a01b;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Utah Jazz</h1>
+            <img src="../resources/images/jazz.png">
+
+            <p>Base: Collin Sexton</p>
+            <p>Escolta: Jordan Clarkson</p>
+            <p>Alero: Lauri Markkanen</p>
+            <p>Ala-Pívot: John Collins</p>
+            <p>Pívot: Walker Kessler</p>
+
+            <h3>Descripción</h3>
+            <p>Equipo dinámico con enfoque ofensivo y jugadores versátiles.</p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>El Jazz ha sido competitivo en distintas épocas.</p>
+            <p>Se caracteriza por su disciplina táctica.</p>
+            <p>Busca consolidar un proyecto competitivo.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

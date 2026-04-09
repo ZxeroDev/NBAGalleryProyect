@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grizzlies</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(270deg, #5d76a9, #000, #12173f);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card,
+        .historia {
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            transition: .3s;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #5d76a9;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+        }
+
+        .historia {
+            width: 500px;
+            max-height: 600px;
+            overflow: auto;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #5d76a9;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Memphis Grizzlies</h1>
+            <img src="../resources/images/grizzlies.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Ja Morant</p>
+            <p>Escolta: Desmond Bane</p>
+            <p>Alero: Marcus Smart</p>
+            <p>Ala-Pívot: Jaren Jackson Jr.</p>
+            <p>Pívot: Steven Adams</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Grizzlies destacan por su energía, intensidad defensiva y juego físico.
+                Son un equipo joven que combina explosividad atlética con una identidad
+                competitiva muy marcada.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+
+            <p>
+                En los últimos años, Memphis ha evolucionado rápidamente hasta convertirse en
+                un equipo competitivo dentro de la NBA, destacando por su juventud y agresividad.
+            </p>
+
+            <p>
+                El liderazgo de Ja Morant ha sido clave para el crecimiento del equipo, llevando
+                a los Grizzlies a nuevas alturas en la liga.
+            </p>
+
+            <p>
+                Su estilo de juego se basa en la velocidad, el contraataque y la presión
+                defensiva constante, lo que los convierte en un rival difícil.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

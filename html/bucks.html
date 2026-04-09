@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bucks</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #00471b, #000, #eee1c6);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #00ff88;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #00ff88;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Milwaukee Bucks</h1>
+            <img src="../resources/images/bucks.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Damian Lillard</p>
+            <p>Escolta: Malik Beasley</p>
+            <p>Alero: Khris Middleton</p>
+            <p>Ala-Pívot: Giannis Antetokounmpo</p>
+            <p>Pívot: Brook Lopez</p>
+
+            <h3>Descripción</h3>
+            <p>
+                Los Bucks son un equipo dominante físicamente, liderado por una de las
+                superestrellas más completas de la NBA, combinando fuerza, velocidad y técnica.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>
+                El equipo alcanzó la gloria recientemente con un campeonato que reafirmó su
+                nivel competitivo en la liga.
+            </p>
+            <p>
+                Han construido una identidad basada en defensa sólida y juego interior dominante.
+            </p>
+            <p>
+                Siguen siendo contendientes gracias a su núcleo de estrellas.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

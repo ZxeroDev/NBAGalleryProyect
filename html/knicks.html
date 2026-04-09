@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Knicks</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #f58426, #000, #006bb6);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px orange;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1,
+        h2 {
+            color: #f58426;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>New York Knicks</h1>
+            <img src="../resources/images/knicks.png">
+
+            <h3>Alineación</h3>
+            <p>Base: Jalen Brunson</p>
+            <p>Escolta: Donte DiVincenzo</p>
+            <p>Alero: RJ Barrett</p>
+            <p>Ala-Pívot: Julius Randle</p>
+            <p>Pívot: Mitchell Robinson</p>
+
+            <h3>Descripción</h3>
+            <p>Los Knicks representan la esencia del baloncesto en Nueva York, con un estilo físico, intenso y una
+                afición apasionada.</p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>Una de las franquicias más antiguas de la NBA.</p>
+            <p>Han tenido épocas de gloria y reconstrucción.</p>
+            <p>Actualmente están en crecimiento competitivo.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

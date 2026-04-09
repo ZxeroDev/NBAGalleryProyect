@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Raptors</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #ce1141, #000, #000);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+             .card {
+            width: 350px;
+            text-align: center;
+        }
+        .card,
+        .historia {
+            width: 350px;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            transition: .3s;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px red;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: red;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Toronto Raptors</h1>
+            <img src="../resources/images/raptors.png">
+            <h3>Alineación</h3>
+            <p>Base: Dennis Schröder</p>
+            <p>Escolta: Gary Trent Jr.</p>
+            <p>Alero: Scottie Barnes</p>
+            <p>Ala-Pívot: Pascal Siakam</p>
+            <p>Pívot: Jakob Poeltl</p>
+            <h3>Descripción</h3>
+            <p>Equipo versátil con enfoque en defensa, intensidad y jugadores polivalentes capaces de aportar en ambos
+                lados de la cancha.</p>
+        </div>
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>Los Raptors alcanzaron la cima en 2019 ganando su primer campeonato, marcando un hito en Canadá.</p>
+            <p>Han sido un equipo innovador con fuerte cultura defensiva y desarrollo de talento.</p>
+            <p>Actualmente buscan reconstruirse alrededor de jóvenes estrellas como Scottie Barnes.</p>
+        </div>
+    </div>
+</body>
+
+</html>

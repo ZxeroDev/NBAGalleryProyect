@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakers</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:200vh;
+
+    background: linear-gradient(270deg, #552583, #fdb927, #2a0e4f);
+    background-size:600% 600%;
+    animation:moverFondo 12s ease infinite;
+}
+
+@keyframes moverFondo{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.contenedor{
+    display:flex;
+    width:90%;
+    max-width:1100px;
+    gap:30px;
+}
+
+/* CARD IZQUIERDA */
+.card{
+    width:45%;
+    background:#111;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 30px rgba(253,185,39,0.6);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.header{
+    background:#552583;
+    padding:20px;
+    text-align:center;
+}
+
+.header h1{
+    margin:0;
+    font-size:28px;
+}
+
+.header p{
+    margin:5px 0 0;
+    color:#ccc;
+}
+
+.logo{
+    text-align:center;
+    background:black;
+}
+
+.logo img{
+    width:120px;
+    margin:15px 0;
+}
+
+.info{
+    padding:20px;
+}
+
+.info h2{
+    border-bottom:1px solid #444;
+}
+
+.info ul{
+    list-style:none;
+    padding:0;
+}
+
+.info li{
+    margin:5px 0;
+}
+
+/* CARD DERECHA HISTORIA */
+.historia{
+    width:55%;
+    background:rgba(0,0,0,0.85);
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 30px rgba(85,37,131,0.7);
+}
+
+.historia h2{
+    text-align:center;
+    border-bottom:2px solid #fdb927;
+    padding-bottom:10px;
+}
+
+.historia p{
+    color:#ddd;
+    line-height:1.6;
+    margin-top:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .contenedor{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card, .historia{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <!-- IZQUIERDA -->
+    <div class="card">
+
+        <div class="header">
+            <h1>Los Angeles Lakers</h1>
+            <p>NBA Team</p>
+        </div>
+
+        <div class="logo">
+            <img src="../resources/images/lakers.png">
+        </div>
+
+        <div class="info">
+            <h2>Alineación Actual</h2>
+            <ul>
+                <li><strong>PG:</strong> D'Angelo Russell</li>
+                <li><strong>SG:</strong> Austin Reaves</li>
+                <li><strong>SF:</strong> LeBron James</li>
+                <li><strong>PF:</strong> Rui Hachimura</li>
+                <li><strong>C:</strong> Anthony Davis</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h2>Posiciones Clave</h2>
+            <ul>
+                <li><strong>Base:</strong> D'Angelo Russell</li>
+                <li><strong>Escolta:</strong> Austin Reaves</li>
+                <li><strong>Alero:</strong> LeBron James</li>
+                <li><strong>Ala-Pívot:</strong> Hachimura</li>
+                <li><strong>Pívot:</strong> Anthony Davis</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- DERECHA -->
+    <div class="historia">
+
+        <h2>Historia de los Lakers</h2>
+
+        <p>
+        Los Lakers son una de las franquicias más exitosas de la NBA.
+        Fundados en Minneapolis en 1947, se trasladaron a Los Ángeles en 1960.
+        </p>
+
+        <p>
+        Han ganado múltiples campeonatos con leyendas como Magic Johnson,
+        Kareem Abdul-Jabbar, Kobe Bryant y LeBron James.
+        </p>
+
+        <p>
+        Su estilo de juego ha sido históricamente ofensivo y espectacular,
+        siendo uno de los equipos más populares del mundo.
+        </p>
+
+        <p>
+        La rivalidad con los Boston Celtics es considerada la más grande
+        en la historia del baloncesto.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

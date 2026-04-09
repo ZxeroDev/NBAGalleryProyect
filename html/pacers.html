@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pacers</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background: linear-gradient(270deg, #fdbb30, #000, #002d62);
+            background-size: 600% 600%;
+            animation: fondo 15s infinite;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card {
+            width: 350px;
+            text-align: center;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .historia {
+            width: 500px;
+            height: 600px;
+            overflow: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .card:hover,
+        .historia:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px yellow;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2 {
+            color: #fdbb30;
+        }
+
+        p {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Indiana Pacers</h1>
+            <img src="../resources/images/pacers.png">
+
+            <p>Base: Tyrese Haliburton</p>
+            <p>Escolta: Buddy Hield</p>
+            <p>Alero: Bennedict Mathurin</p>
+            <p>Ala-Pívot: Obi Toppin</p>
+            <p>Pívot: Myles Turner</p>
+
+            <h3>Descripción</h3>
+            <p>Equipo ofensivo con ritmo alto y gran capacidad anotadora desde el perímetro.</p>
+        </div>
+
+        <div class="historia">
+            <h2>Historia</h2>
+            <p>Los Pacers han sido un equipo competitivo en varias etapas de la NBA.</p>
+            <p>Destacan por su disciplina y consistencia.</p>
+            <p>Actualmente construyen un proyecto joven y prometedor.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
